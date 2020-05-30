@@ -37,7 +37,7 @@ class InformeGeolocalizacionActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Add a marker in Bogota and move the camera
         val bogota = LatLng(4.624335, -74.063644)
-        mMap.addMarker(MarkerOptions().position(bogota).title("Ubícate en Bogotá"))
+        mMap.addMarker(MarkerOptions().position(bogota).title("Ubícate en Bogotá."))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(bogota))
     }
 }
