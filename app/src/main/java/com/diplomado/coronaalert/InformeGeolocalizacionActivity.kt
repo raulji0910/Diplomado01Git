@@ -1,14 +1,15 @@
 package com.diplomado.coronaalert
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+
 
 class InformeGeolocalizacionActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -39,5 +40,9 @@ class InformeGeolocalizacionActivity : AppCompatActivity(), OnMapReadyCallback {
         val bogota = LatLng(4.624335, -74.063644)
         mMap.addMarker(MarkerOptions().position(bogota).title("Ubícate en Bogotá."))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(bogota))
+
+        val cameraPosition = CameraPosition.builder().target(bogota).zoom(10f).build()
+
+        mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }
 }
