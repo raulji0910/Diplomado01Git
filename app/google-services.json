@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "609874477416",
+    "firebase_url": "https://coronaalert-38343.firebaseio.com",
+    "project_id": "coronaalert-38343",
+    "storage_bucket": "coronaalert-38343.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609874477416:android:273752f773e6d80b6c56dd",
+        "android_client_info": {
+          "package_name": "com.diplomado.coronaalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609874477416-hov89s216mrt5tcoqsm85vm00q4ofd9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnlrLo24cqIb4xAkzdx2bMHEeZAASddVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609874477416-hov89s216mrt5tcoqsm85vm00q4ofd9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
